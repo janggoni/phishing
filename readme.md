@@ -3,6 +3,7 @@
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: No identifier specified for entity: com.phishing.fast.api.search.vo.PhishingRecord -->
 
 -- 미니 프로젝트 개요 --
+
  한국의 피싱 메시지 검색 api로서 쳇gpt plugin을 통해 피싱 메시지의 여부를 확인할수 있는 plugin
 
 사용 스펙 : 
