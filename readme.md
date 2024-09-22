@@ -19,8 +19,9 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
   - 그외 : kibana, momgoose, python
 
   - 아키텍처 예상 구조 -
-    : chatgpt를 통하여 키워드를 검색하면 대기하고 있던 
-    1. kafka를 통하여 elastricsearch를 통해 mariadb내에 있는 피싱 메시지 및 유형을 확인
+    
+     
+    1. chatgpt를 통하여 키워드를 검색하면 대기하고 있던 kafka를 통하여 elastricsearch를 통해 mariadb내에 있는 피싱 메시지 및 유형을 확인
     2. 동시에 검색 keyword와 빈도수를 저장하기 위해 mongodb에 저장
     3. mariadb내의 피싱 메시지 데이터의 경우 파이썬 셀레니움 모듈 사용하여 피싱 메시지 데이터 크롤링
     4. kibana를 통해 검색 빈도 수 및 모니터링을 통해 사람들이 많이 검색한 피싱 유형 열람
