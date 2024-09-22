@@ -55,3 +55,5 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
       역할: MongoDB와 Elasticsearch에서 데이터를 시각화하여 검색 빈도, 인기 피싱 유형 등을 모니터링합니다.
       데이터 흐름: Elasticsearch & MongoDB → Kibana.
+
+      
