@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FastApplication<fast>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.phishing.fast.FastApplication",
+            "projectName": "fast",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
