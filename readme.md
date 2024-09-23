@@ -18,12 +18,12 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
      
   - 그외 : kibana, momgoose, python
 
-  - 아키텍처 예상 구조 -
+아키텍처 예상 구조
     
      
    1. ChatGPT (검색 시작) 
 
-     역할: 사용자가 검색 키워드를 입력합니다.
+     역할: 사용자가 ChatGPT plugin을 사용하여 피싱에 대한 검색 키워드를 입력합니다.
      결과: 키워드가 Kafka로 전송되어 처리 대기 상태가 됩니다.
 
    2. Kafka (메시지 큐)
@@ -36,7 +36,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
      역할: MariaDB에 저장된 피싱 메시지 및 유형을 빠르게 검색하고 결과를 반환합니다.
      데이터 흐름: MariaDB 데이터를 Elasticsearch에서 인덱싱 후 조회.
 
-   4. MariaDB (데이터 저장)
+   4. MariaDB (데이터 저장, 실질 피싱 데이터)
 
      역할: 피싱 메시지 및 유형 데이터를 저장합니다.
      데이터 업데이트: Python Selenium을 통해 실시간으로 크롤링된 데이터가 추가됩니다.
