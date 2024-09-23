@@ -39,21 +39,25 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
    4. MariaDB (데이터 저장, 실질 피싱 데이터)
 
      역할: 피싱 메시지 및 유형 데이터를 저장합니다.
+     
      데이터 업데이트: Python Selenium을 통해 실시간으로 크롤링된 데이터가 추가됩니다.
 
    5. MongoDB (검색 로그 저장)
 
       역할: 사용자가 검색한 키워드와 그 빈도수를 저장하여, 검색 패턴을 분석할 수 있게 합니다. 
+
       데이터 흐름: Kafka → MongoDB.
    
-   6. Python Selenium (크롤링)
+   7. Python Selenium (크롤링)
 
       역할: 피싱 메시지와 유형 데이터를 웹에서 크롤링하여 MariaDB에 저장합니다.
+
       데이터 흐름: 웹 사이트 → Python Selenium → MariaDB.
 
-   7. Kibana (모니터링 및 시각화)
+   9. Kibana (모니터링 및 시각화)
 
       역할: MongoDB와 Elasticsearch에서 데이터를 시각화하여 검색 빈도, 인기 피싱 유형 등을 모니터링합니다.
+
       데이터 흐름: Elasticsearch & MongoDB → Kibana.
 
       
